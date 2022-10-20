@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 import urllib.request
 from bs4 import BeautifulSoup
 import json
