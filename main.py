@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 import function
 
 
@@ -23,7 +22,7 @@ def send(html_parse, content, difference, Config, count):
 
     data = {}
 
-    if (difference == NULL):
+    if (difference == None):
         data = {
             "embeds": [
                 {

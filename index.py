@@ -23,7 +23,7 @@ with urllib.request.urlopen(Config['url']) as res:
         count = int(content[0].strip('人'))
         if (content[1] == '受付終了'):
             # 受付が終了したら実行
-            main.send(html_parse, content, NULL, Config, count)
+            main.send(html_parse, content, None, Config, count)
             function.setCount(Config, 'end')
         else:
             # 前回との合計人数の差を計算
