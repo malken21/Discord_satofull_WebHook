@@ -17,8 +17,8 @@ def getText(item):
 
 def setCount(Config, value):
     Config['count'] = value
-    file = open('Config.json', 'w')
-    json.dump(Config, file, indent=4)
+    with open('data.json', 'w') as file:
+        json.dump(Config, file, indent=4)
 
 
 def sendDiscord(data, WebHook):
