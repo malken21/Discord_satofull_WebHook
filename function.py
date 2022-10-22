@@ -17,7 +17,7 @@ def getText(item):
 
 def setCount(Config, value):
     Config['count'] = value
-    with open('data.json', 'w') as file:
+    with open('Config.json', 'w') as file:
         json.dump(Config, file, indent=4)
 
 
