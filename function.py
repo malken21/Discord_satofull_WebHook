@@ -23,3 +23,8 @@ def setCount(Config, value):
 
 def sendDiscord(data, WebHook):
     requests.post(WebHook, json=data)
+
+
+def read(path):
+    with open(path, 'r') as file:
+        return json.load(file)

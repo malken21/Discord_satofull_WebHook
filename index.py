@@ -1,11 +1,10 @@
 import urllib.request
 from bs4 import BeautifulSoup
-import json
 import function
 import main
 
 
-Config = json.load(open('Config.json', 'r'))
+Config = function.read('Config.json')
 
 function.setup_requests()
 with urllib.request.urlopen(Config['url']) as res:
